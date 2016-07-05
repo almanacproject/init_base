@@ -8,6 +8,6 @@ RUN apk update && apk add python3 git openssl openjdk8-jre
 
 RUN python3 -m ensurepip && pip3 install --upgrade pip setuptools
 
-RUN pip install git+https://github.com/almanacproject/rework.git
-RUN pip install git+https://github.com/almanacproject/psst.git
-RUN pip install git+https://github.com/almanacproject/bob_cert_builder.git
+RUN pip install git+https://github.com/almanacproject/rework.git@v0.0
+RUN pip install git+https://github.com/almanacproject/psst.git@v0.0
+RUN pip install git+https://github.com/almanacproject/bob_cert_builder.git@v0.0
