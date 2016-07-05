@@ -10,4 +10,4 @@ RUN python3 -m ensurepip && pip3 install --upgrade pip setuptools
 
 RUN pip install git+https://github.com/almanacproject/rework.git@v0.1
 RUN pip install git+https://github.com/almanacproject/psst.git@v0.1
-RUN pip install git+https://github.com/almanacproject/bob_cert_builder.git@v0.1
+RUN pip install git+https://github.com/almanacproject/bob_cert_builder.git@v0.1.1
