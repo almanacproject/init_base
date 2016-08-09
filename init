@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+mkdir -p -- "$OUTPUT"
+
+cd "$OUTPUT"
+
+printf "Init Certificates and passwords.\n"
+printf '{ "psst": %s, "bob": %s }\n' "$(psst "$CONFIG")" "$(bob "$CONFIG")" | rework "$CONFIG"

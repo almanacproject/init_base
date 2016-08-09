@@ -10,3 +10,7 @@ RUN pip install PyYAML
 RUN pip install git+https://github.com/almanacproject/rework.git@v0.0.2
 RUN pip install git+https://github.com/almanacproject/psst.git@v0.0.2
 RUN pip install git+https://github.com/almanacproject/bob_cert_builder.git@v0.0.2
+
+COPY init /root/init
+RUN chmod +x /root/init
+CMD ["/root/init"]
